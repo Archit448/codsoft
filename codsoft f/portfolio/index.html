@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: rgb(0, 0, 33);
+        color: white;
+      }
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 100px;
+        background-color: rgb(30, 30, 70);
+      }
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        list-style-type: none;
+        padding: 50px 20px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: azure;
+      }
+      nav ul li a:hover {
+        color: rgb(86, 86, 208);
+      }
+      .left {
+        font-size: 2rem;
+      }
+
+      .firstsection {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 80px, 0;
+      }
+
+      .firstsection > div {
+        width: 30%;
+      }
+      .leftsection {
+        font-size: 3rem;
+        width: 50%;
+        margin: 50px;
+      }
+      .rightsection {
+        width: 50%;
+      }
+      .rightsection img {
+        width: 80%;
+        margin-top: 60px;
+      }
+      #element {
+        color: rgb(86, 86, 208);
+      }
+      .purple {
+        color: rgb(170, 101, 135);
+      }
+      .secondsection {
+        max-width: 80vw;
+        margin: 170px;
+      }
+      main hr {
+        border: 0;
+        background-color: #9c97f1;
+        height: 2px;
+        margin: 40px, 84px;
+      }
+      .secondsection h1 {
+        margin: 20px;
+      }
+      .secondsection span {
+        margin: 60px;
+      }
+      .secondsection h3 {
+        color: gray;
+      }
+      footer {
+        background-color: #0e0e1a;
+  
+      }
+      .footer {
+        display: flex;
+        padding: 35px, 25px;
+        justify-content: space-evenly;
+      }
+      .footer > div {
+        width: 150px;
+      }
+      footer .footer-rights {
+        text-align: center;
+        color: gray;
+        padding: 12px;
+      }
+      .leftsection .btn {
+        padding: 10px;
+        background-color: #1e2167;
+        color: white;
+        border: 2px solid white;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Archit's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Servies</a></li>
+            <li><a href="/">Projects</a></li>
+            <li><a href="/">Contact me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="firstsection">
+        <div class="leftsection">
+          Hi my name is <span class="purple">Archit</span>
+          <div>and I am a passionate</div>
+
+          <span id="element"></span>
+          <div class="buttons">
+            <button class="btn">Download Resume</button>
+            <button class="btn">Visit Github</button>
+          </div>
+        </div>
+        <div class="rightsection">
+          <img src="./img1.png" alt="" />
+        </div>
+      </section>
+      <div class="secondsection">
+        <hr />
+        <span>What I am doing </span>
+        <h1>My Workings</h1>
+        <br />
+        <h3>
+          <ul>
+            <li>Intern at Codsoft</li>
+            <br />
+            <li>Worked on gaming design</li>
+            <br />
+            <li>Video Editing</li>
+            <br />
+          </ul>
+        </h3>
+      </div>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="footer-first">
+          <h3>Archit Developer Portfolio</h3>
+        </div>
+        <div class="footer-second">
+          <!-- this space is given to add more things in the fotter -->
+        </div>
+      <div class="footer-rights">
+        Copyright &#169; www.architportfolio.com |All Right Reserved
+      </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Web Developer", "Web Designer", "Graphic Designer"],
+        typeSpeed: 50,
+      });
+    </script>
+  </body>
+</html>
